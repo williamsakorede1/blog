@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav>
+    <h3>KorelBlogs</h3>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+  </div>
+    <div class="links">
+      <h4><a href="./home.html">HOME</a></h4>
+      <h4><a href="./about.html">ABOUT</a></h4>
+      <h4><a href="./blog.html">BLOGS</a></h4>
+    </div>
+  </nav>
+  <div class="general">
+    <h2>Latest Blogs:</h2>
+                                                                                                                                                                                                                                                                                
+    <div class="blog_container">
+      <h3 class="blog_title">Importance of Drinking Water</h3>
+      <p class="blog_body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius molestiae nostrum iusto perferendis atque nam temporibus? Cupiditate inventore ullam possimus quidem fuga, alias magni, recusandae impedit delectus sunt fugiat accusantium?</p>
+      <h4 class="blog_author">Author: Sam</h4>
+    </div>
+  
+    <div class="blog_container">
+      <h3 class="blog_title">Importance of Smoking</h3>
+      <p class="blog_body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, quos eaque, quae similique molestias nemo tenetur dolores non nisi enim voluptatum optio aperiam? Sunt, rem!</p>
+      <h4 class="blog_author">Author: Bob</h4>
+    </div>
+  
+    <div class="blog_container">
+      <h3 class="blog_title">How I Created A Billion dollar business</h3>
+      <p class="blog_body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate molestiae omnis hic veniam reprehenderit a similique eius quia illo facilis sunt voluptas voluptates inventore autem doloribus minus, ex molestias unde accusamus harum rerum dolore perspiciatis!</p>
+      <h4 class="blog_author">Author: Akorede</h4>
+    </div>
+  
+    <div class="blog_container">
+      <h3 class="blog_title">Quantum physics</h3>
+      <p class="blog_body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aperiam minus alias, quaerat necessitatibus tenetur?</p>
+      <h4 class="blog_author">Author: Gabriel</h4>
+    </div>
+    <p id="footer">&copy;KorelBlogs2024</p>
+    </div>
+</body>
+<script>
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".links");
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+  document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}))
+</script>
+</html>
